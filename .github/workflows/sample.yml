@@ -32,3 +32,6 @@ jobs:
 
             - name: "list files before downloading dependencies"
               run: ls
+
+            - name: "run the python file"
+              run: python scripts.py
