@@ -1,0 +1,17 @@
+name: "Sample pipeline"
+
+on:
+    push:
+        branches:
+            - master
+            - main
+
+jobs:
+    sampleJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "print hello world"
+              run: echo "hello world"
+
+            - name: "print current working directory"
+              run: pwd
