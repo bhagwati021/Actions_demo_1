@@ -26,9 +26,8 @@ jobs:
               with:
                   python-version: '3.x'
 
-            - name: "Install dependencies"
-              run: |
-                python -m pip install --upgrade pip
+            - name: Install Python dependencies
+              uses: py-actions/py-dependency-install@v4
 
             - name: "list files before downloading dependencies"
               run: ls
