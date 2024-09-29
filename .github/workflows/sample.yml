@@ -6,6 +6,12 @@ on:
             - master
             - main
 
+    pull_request:
+        branches:
+            - main
+    
+    workflow_dispatch:
+
 jobs:
     sampleJob:
         runs-on: ubuntu-latest
